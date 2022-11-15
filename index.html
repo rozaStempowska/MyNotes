@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>myNotes</title>
+    <script src="https://kit.fontawesome.com/e4e6a99897.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+        <div class="menu">
+            <h1 class="logo"><i class="fa-solid fa-folder"></i>MyNotes</h1>
+            <div>
+                <button class="add-button"><i class="fa-solid fa-plus"></i> Dodaj</button>
+                <button class="delete-all-button"><i class="fa-solid fa-trash"></i> Usuń wszystkie</button>
+            </div>
+        </div>
+
+        <div class="note-area">
+                <!-- <div class="note">
+                    <div class="note-header">
+                        <h3 class="note-title">Notatka #1</h3>
+                        <button class="delete-note"><i class="fa-solid fa-x"></i></button>
+                    </div>
+                    <div class="note-body">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores magni libero fuga delectus repellendus nesciunt laboriosam unde earum? Ad facere commodi aliquid tempore quis dolore cupiditate porro beatae quisquam ratione?</p>
+                    </div>
+                </div> -->
+        </div>
+
+        <div class="note-panel">
+            <h2>Dodaj notatkę</h2>
+
+            <label for="category">Wybierz kategorię</label>
+            <select id="category" onchange="selectValue()">
+                <option value="0" disabled selected>---Wybierz opcję---</option>
+                <option value="1">Zakupy</option>
+                <option value="1">Nauka</option>
+                <option value="1">Inne</option>
+            </select>
+
+            <label for="text">Wpisz treść notatki</label>
+            <textarea id="text" cols="30" rows="10"></textarea>
+
+            <p class="error">Uzupełnij wszystkie pola!</p>
+            
+            <div class="panel-button">
+                <button class="save"><i class="fa-solid fa-floppy-disk"></i> Zapisz</button>
+                <button class="cancel"><i class="fa-solid fa-x"></i> Anuluj</button>
+            </div> 
+            
+        </div>
+
+    
+    <script src="script.js"></script>
+</body>
+</html>
